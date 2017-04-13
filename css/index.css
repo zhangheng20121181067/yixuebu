@@ -1,0 +1,91 @@
+h2,h3,h4{margin:0}
+h3{opacity: .8}
+h4{font-size:17px;}
+p{margin:0}
+span{height:26px;}
+a{color:#000}
+a:hover{color:#009394}
+
+.banner > ul {display: none;/*width: 999999999px;*/height:420px;margin-bottom:0;position:absolute;top:0; left: 0; }
+.banner > ul > li  {width:1920px;      float: left;  height: 420px;  }
+.banner > ul > li > a {display: block;text-align:center;line-height:420px;font-weight: bold;}
+
+
+.banner{/*margin-top:41px;*/    width:100%;height:420px;overflow: hidden;position:relative}
+.banner h2{padding:0 10px;height:50px;font-family: "宋体";font-size:24px;background: #e6731b;color:#fff;text-align: center;line-height:50px;position:absolute;left:445px;top:243px;}
+.banner p{width:355px;line-height:20px;padding:10px;font-family: "宋体";font-size:14px;color:#5f5f5f;background: #fff;position:absolute;left:445px;top:300px;}
+.banner li{position:relative}
+.banner .btnBox{position:absolute;left:445px;top:370px;}
+.banner .btnBox span{display:inline-block;width:20px;height:20px}
+
+.sessionOne{margin-bottom:50px;}
+.sessionOne h3{font-family: "微软雅黑";margin:41px 0 30px 0;}
+.sessionOne .picShow ul li{float:left;margin-right:30px;}
+.sessionOne .picShow ul li.mrZero{margin-right:0;}
+.sessionOne .picShow ul li img{width:272px;height:152px;}
+.sessionOne .picShow ul li p{height:32px;line-height:32px;}
+.sessionOne .news{padding:0 19px;}
+.sessionOne .news dl{margin-bottom:10px;}
+.sessionOne .news dl dt{height:23px;line-height:23px;margin-bottom: 7px;}
+.sessionOne .news dl dd{background:url(../images/ddrow_03.jpg) no-repeat 0 10px;padding-left:12px;line-height:34px;font-family: "微软雅黑";font-size: 16px;}
+.sessionOne .news a span{display:inline-block;margin:-1px 0 0 5px;font-family: "微软雅黑";font-size:14px;}
+
+.sessionTwo{height:80px;background: #e6e6e6;}
+.sessionTwo ul li{ width:394px;height:80px;line-height:70px;float:left;/*border-top:10px solid transparent;*/padding-left:18px;text-align: center;position:relative;}
+.sessionTwo ul li:before{content: "";border-top:9px solid #fff;border-bottom: 9px solid #eeeeee;border-left: 9px solid #eeeeee;
+    border-right: 9px solid #eeeeee;position:absolute;left:193px;top:100%;display:none}
+.sessionTwo ul li a{font-weight:500;font-size:18px;}
+.sessionTwo ul li:hover{background: #fff;box-shadow:0 1px 5px 0 #d0d0d0;}
+.sessionTwo ul li:hover:before{display:block}
+.sessionTwo ul li:nth-child(1){border-top:10px solid #a04440;}    /* hover*/
+.sessionTwo ul li:nth-child(2){border-top:10px solid #e6731b;}
+.sessionTwo ul li:nth-child(3){border-top:10px solid #1a5f95;}
+
+.sessionThree{background: #eeeeee;padding:10px 0 45px 0;}
+.sessionThree .inner li{position:relative}
+.sessionThree .inner li>a{position:absolute;right:30px;bottom:-30px;}
+.sessionThree .inner li>a span{margin:-1px 0 0 5px;font-size:14px;}
+.sessionThree ul li{width:394px;float:left;padding:10px 20px;}
+.sessionThree ul li dl dd{background:url(../images/p_03.png) no-repeat 0 12px;padding-left:18px;line-height:37px;}
+
+.sessionFour{margin-bottom:50px;}
+.sessionFour .top{margin:40px 0 30px 0;height:40px;}
+.sessionFour .top .ztNet{width:870px;}
+.sessionFour .top h3{line-height:40px;}
+.sessionFour .top .btnZt{margin-top:10px;}
+.sessionFour .top .btnZt span{opacity:.7}
+.sessionFour .top .btnZt .btn.opacity{opacity:1}
+.sessionFour .top .schoolFc{width:270px;}
+.sessionFour .top span{display:inline-block;width:20px;height:20px;}
+
+.scroll_horizontal{position:relative;width:870px;}
+.scroll_horizontal .box{position:relative;width:870px;height:180px;overflow:hidden;}
+.scroll_horizontal .list{overflow:hidden;width:9999px;}
+.scroll_horizontal .list li{float:left;width:302px;}
+.scroll_horizontal .list li p{width:270px;text-align:center;line-height:30px;color:#000}
+
+.scroll_horizontal .prev,
+.scroll_horizontal .next{position:absolute;top:-33%;width:20px;height:20px;background-repeat:no-repeat;cursor:pointer;}
+.scroll_horizontal .prev{right:24px;background-position:0 0;}    /* background-image:url(img/control.png)*/
+.scroll_horizontal .next{right:0;background-position:-40px 0;}
+.scroll_horizontal .prev:hover{background-position:0 -50px;}
+.scroll_horizontal .next:hover{background-position:-40px -50px;}
+
+
+.actAuto { width:270px; height:180px;overflow: hidden;position:relative;  }
+.actAuto > ul {display: none;/*width: 999999999px;*/height:180px;margin-bottom:0;position:absolute;top:0; left: 0; }
+.actAuto > ul > li{width:270px;float:left; height: 180px;}
+.actAuto > ul > li > a{/*display: block;*/text-align:center;font-weight: bold;}
+/*.left-btn,.right-btn {width:20px;height:20px;position:absolute;top:-33%;right:0;cursor: pointer;}
+.left-btn {right: 24px;;  }*/
+.img-btn-list{width: 100%;  position: absolute;  bottom: 0; left: 0; text-align: right; }
+.img-btn-list>span{display:inline-block;width:15px;height:15px;margin: 0 5px;background:#9ab07a;cursor:pointer;}
+.img-btn-list>span.current{ background: #145a00}
+/*.sessionFour .down ul.ztPic li{float:left;margin-right:32px;text-align: center}
+.sessionFour .down ul.ztPic li a{display:block;color:#000}
+.sessionFour .down ul.ztPic li.mrZero{margin-right:0}*/
+
+/*.sessionFour .down ul.ztPic li .btnZu{margin-left:211px;width:60px;}
+.sessionFour .down ul.ztPic li .btnZu ul{display:inline-block;}
+.sessionFour .down ul.ztPic li .btnZu ul li{width:10px;height:10px;margin-right:4px;background: #9ab07a;float:left;}
+.sessionFour .down ul.ztPic li .btnZu ul li.mrZero{margin-right:0;}*/

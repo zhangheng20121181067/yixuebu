@@ -1,0 +1,18 @@
+{
+  "liuyan": [
+    {"id": 1, "user": "清风1", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/01.jpg", "date": "2016年9月22日 11:21:17 "},
+    {"id": 2, "user": "清风2", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/02.jpg", "date": "2016年9月22日 12:22:19"},
+    {"id": 3, "user": "清风3", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/03.jpg", "date": "2016年9月22日  13:25:23"},
+    {"id": 4, "user": "清风4", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/04.jpg", "date": "2016年9月22日 14:29:38"},
+    {"id": 5, "user": "清风5", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/05.jpg", "date": "2016年9月22日 15:31:45"},
+    {"id": 6, "user": "清风6", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/01.jpg", "date": "2016年9月22日 16:38:57"},
+    {"id": 7, "user": "清风7", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/02.jpg", "date": "2016年9月22日 17:42:04"},
+    {"id": 8, "user": "清风8", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/03.jpg", "date": "2016年9月22日 18:46:17"},
+    {"id": 9, "user": "清风9", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/04.jpg", "date": "2016年9月22日 19:50:21"},
+    {"id": 10, "user": "清风10", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/05.jpg", "date": "2016年9月22日 20:07:34"}
+],
+  "pinglun":[
+    {"id": 1, "user": "老朱1", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/01.jpg", "date": "2016年9月22日 11:21:17 "},
+    {"id": 2, "user": "老朱2", "info": "山中无老虎，猴子称霸王", "imgsrc": "lyb/images/02.jpg", "date": "2016年9月22日 12:22:19"}
+  ]
+}

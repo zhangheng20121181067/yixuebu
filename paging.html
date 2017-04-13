@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分页</title>
+	<style>
+		*{ margin:0; padding:0}
+		a{ text-decoration:none; font-size:14px; color:#333;}
+		a:hover{ color:red}
+		ul{ list-style:none}
+		.news{ width:400px; margin:100px; padding:20px; border:1px solid #ccc}
+		.newsList li{ height:30px; line-height:30px;}
+		.newsList li span{ float:right; width:80px; text-align:left;*margin-top:-30px}
+		.page{ padding-top:20px; text-align:center}
+		.page a,.page span{ padding:8px 10px; margin:0 5px; font-size:12px; cursor:pointer; *margin-top:-2px; background:#ddd;}
+		.page .ac{ color:#fff; background:#900; font-weight:bold}
+	</style>
+	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			function paging(pagesize){
+				var arr=[{"title":"冬奥会期间京张两地赛区50分钟直达","time":"2016-1-1"},
+					{"title":"6名“北京榜样” 走进武警军营","time":"2016-1-13"},
+					{"title":"北京农村廉洁研究中心成立","time":"2016-1-17"},
+					{"title":"北京初步实现食品安全检测与监测全覆盖","time":"2016-1-20"},
+					{"title":"大兴一仓库失火 近40辆车救援","time":"2016-2-24"},
+					{"title":"起底杨秀珠13年逃亡路：辗转多国 亡命天涯","time":"2016-3-10"},
+					{"title":"大兴一仓库失火 近40辆车救援","time":"2016-3-14"},
+					{"title":"18个月负债12余万元，大学生身陷“连环贷”！","time":"2016-3-18"},
+					{"title":"江苏省人民代表大会常务委员会决定任命名单","time":"2016-3-20"},
+					{"title":"大兴一仓库失火 近40辆车救援","time":"2016-4-4"},
+					{"title":"中国是社会主义建设的典范","time":"2016-4-6"},
+					{"title":"奥运史上首个难民代表团!5名难民运动员赴里约","time":"2016-4-24"},
+					{"title":"三中院试点电子送达诉讼文书 最快仅用半小时","time":"2016-5-2"},
+					{"title":"冬奥会期间京张两地赛区50分钟直达","time":"2016-5-7"},
+					{"title":"6名“北京榜样” 走进武警军营","time":"2016-5-19"},
+					{"title":"北京农村廉洁研究中心成立","time":"2016-5-24"},
+					{"title":"北京初步实现食品安全检测与监测全覆盖","time":"2016-5-30"},
+					{"title":"大兴一仓库失火 近40辆车救援","time":"2016-6-6"},
+					{"title":"起底杨秀珠13年逃亡路：辗转多国 亡命天涯","time":"2016-6-19"},
+					{"title":"大兴一仓库失火 近40辆车救援","time":"2016-6-29"},
+					{"title":"18个月负债12余万元，大学生身陷“连环贷”！","time":"2016-6-30"},
+					{"title":"江苏省人民代表大会常务委员会决定任命名单","time":"2016-7-6"},
+					{"title":"大兴一仓库失火 近40辆车救援","time":"2016-7-15"},
+					{"title":"中国是社会主义建设的典范","time":"2016-7-18"},
+					{"title":"奥运史上首个难民代表团!5名难民运动员赴里约","time":"2016-7-20"},
+					{"title":"大兴一仓库失火 近40辆车救援","time":"2016-7-29"}];
+				var num=pagesize;   //每页显示几条
+				var page=0;
+				//分页
+				function fen(page){
+					//主要是看这里===========================
+					var start=num*page;//从哪里开始
+					var end=start+num;//从这里结束
+					//主要是看这里===========================
+					//创建列表
+					var newsList=$("<ul class='newsList'></ul>");
+					//填充数据
+					for(var i=start;i<end;i++){
+						if(arr[i]){
+							var li=$("<li></li>");
+							li.html('<a href="javascript:;">'+arr[i].title +'</a><span>'+arr[i].time +'</span>');
+							li.appendTo(newsList);
+						}
+					}
+					$("#news").prepend(newsList);
+				}
+				if(arr.length>num){
+					var html="<span class='pre'>上一页</span>";
+					var pagenn=Math.ceil(arr.length/num);
+					for(var i=1;i<pagenn+1;i++){
+						html+="<a>"+i+"</a>";
+					}
+					html+="<span class='next'>下一页</span>";
+					$(".page").html(html)
+				}
+				//初始化第一页的数据
+				empty_append(page);
+				//上一页
+				$(".pre").click(function(){
+					page==0 ? page==0 : page--;
+					empty_append(page);
+				});
+				//下一页
+				$(".next").click(function(){
+					page==pagenn-1 ? page==pagenn-1 : page++;
+					empty_append(page);
+				});
+				//页码直接跳转
+				$(".page").find("a").click(function(){
+					page=$(this).index()-1;
+					empty_append(page);
+				})
+				//加样式  分页
+				function empty_append(page){
+					$(".newsList").empty();
+					$(".page").find("a").eq(page).addClass("ac").siblings("a").removeClass("ac");
+					fen(page);
+				}
+			}
+			paging(8);
+		})
+	</script>
+</head>
+<body>
+	<div id="news" class="news">
+	    <div class="page">
+
+	    </div>
+	</div>
+</body>
+</html>
